@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(client)
+add_executable(main main.cpp)
+link_directories(X:/MinGW/lib)
+target_link_libraries(main libws2_32.a)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ")
